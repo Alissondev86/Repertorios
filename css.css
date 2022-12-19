@@ -1,0 +1,236 @@
+@charset"utf-8";
+/*tag semantica que faz a divisão da página (header, main e footer)*/
+/*main divide com section e aside*/
+/*nav = botão de navegação*/
+/*<a> ancora*/
+/*baixar "live Server"*/
+
+body{	
+background: gray;
+}
+
+header.cabecalho {	
+	Position: relative;
+	font-family:'Josefin Sans', sans-serif;
+	font-weight: bold; /*negrito*/
+	text-align: center;
+	margin: 10px 10px;
+	padding: 10px;
+	background: white;
+	color: rbga(0,0,0,0.5);
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+}
+
+.cabecalho h1 {
+	left: 20px;
+	margin: 0px 15px;
+	padding: 5px;
+}
+
+.cabecalho h2 {
+	font-family: 25px 'Josefin Sans', sans-serif;
+	padding: 5px;
+	margin: 0px 15px;
+	padding: 5px;
+}
+
+/*IMAGEM*/
+
+img#logo{
+	position: absolute;
+	left:-10px;
+	top: 0px;
+	margin: 0px 15px;
+	padding: 5px;
+	width: 165px;
+	transition: all 1s;/*comando para utilizar o hover*/
+	cursor: pointer;/*comando para utilizar o hover*/
+}
+
+img#logo:hover{
+	 -webkit-transform: rotateZ(360deg);/*gira a imagem*/
+    transform: rotateZ(360deg);/*gira a imagem*/
+}
+
+/*MENU*/
+
+#menu nav { 
+	margin: 0px 15px;
+	padding: 5px;
+}
+
+#menu nav ul li{/* posicao do botao flutuante */
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	color: white;
+	position: relative;/*assim posso posicionar ele*/
+	margin: 0px 15px;
+	padding: 5px;	/*ou 10px 10px 10px 10px*/
+	display: inline-block;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+#menu nav ul li:hover{/*efeito do botao flutuante*/
+	-webkit-transform: scale(1.5);
+    transform: scale(1.5);  /*aumenta a imagem quando passa o mouse*/
+    background-color: rgba (0,0,0,.4);/* muda a cor quando passa o mouse*/
+    /*-webkit-filter: blur(5px);
+    filter: blur(5px);*/ /*embaça quando passa o mouse*/
+}
+	
+#menu nav ul li a{ /*formatação das letras do Bot Flu*/
+	color: white;
+	font-weight: bold;
+	padding: 5px 10px;
+	/*text-align: center;*/
+	text-transform: uppercase;/*texto em caixa alta*/
+	text-decoration: none;/*tira o sublinhado do href*/
+	border-bottom: 0px solid #f00;/*borda*/
+	background: rgba(0, 0, 0,.9);/* cor de fundo do balao */
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	/* cantos arredondados */
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+/*CORPO*/
+
+main {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+}
+
+section.corpo {
+	display: block;
+	float:	left;
+	margin: 10px 10px;
+	padding: 10px;
+	background: white;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	width: 625px;
+}
+
+.corpo ul{ /*formatação do subtitulo*/
+	font-size: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	list-style-type: none;/*remove a bolinha do ul*/
+	/*width: 550px;/*largura da caixa de texto*/
+	display: block;
+	margin: 10px;/*medidas ao redor do texto*/
+	padding: 5px; /*medidas dentro da caixa de texto*/
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.corpo ul li a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none; /*remove as linhas do link*/
+}
+
+.corpo ul li a:hover{
+	display: inline-block;
+	transition: all 0.3s;
+	cursor: pointer;
+	-webkit-transform: scale(1.5);
+    transform: scale(1.2);  /*aumenta a imagem quando passa o mouse*/
+    background-color: rgba (0,0,0,.4);
+	/*faz uma sombra quando passa o mouse*/
+    /*filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));*/
+}
+
+.lado { 
+	display: block;
+	float: right;
+	margin: 10px 10px;
+	padding: 10px;
+	background: white;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	width: 625px;
+	}
+	
+.lado ul{
+	font-size: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	list-style-type: none;
+}
+
+.lado ul li a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none; 
+}
+
+.lado ul li a:hover {
+	display: inline-block;
+	transition: all 0.3s;
+	cursor: pointer;
+	-webkit-transform: scale(1.5);
+    transform: scale(1.2);  /*aumenta a imagem quando passa o mouse*/
+    background-color: rgba (0,0,0,.4);
+	/*faz uma sombra quando passa o mouse
+	filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5);*/
+}
+
+h3 {
+	Text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	box-shadow: 1px 1px 1px black;
+	font-weight: bold;
+}
+
+h4	{
+	text-align: left;
+	font-size: 20px;	
+}
+
+h4 a{
+	font-size:15px;
+	margin: 10px;
+	margin: 5px;
+	list-style-type: none;
+	text-decoration: none;
+}
+	
+/*SUBMENU DO SUMARIO */
+
+summary{
+display: inline-block;
+color: white;/* cor da letra */
+margin: 5px 0px 0px 10px;
+padding: 5px 10px;
+text-transform: uppercase;
+border: 0px solid #f00;
+background: rgba(0, 0, 0, 0.9); /*cor de fundo do balao*/
+/*cantos arredondados*/
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+/*efeito de transição*/
+transition: all 0.5s;
+cursor: pointer;
+}
+
+summary:hover {
+	-webkit-transform: scale(1.5); /*aumenta a letra quando passa o mouse*/
+    transform: scale(1.5);
+}
+
+.rodape {
+font-family: 20px 'Josefin Sans', sans-serif;
+color: white;
+margin: 10px 8px;
+padding: 10px;
+text-align: center;
+border-top: 1px black solid;
+position: relative;/* joga para o final da pagina */
+bottom: 0;/* joga para o final da pagina */
+clear: both;
+}
+
+.rodape a{
+	text-decoration: none;
+}
