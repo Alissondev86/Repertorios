@@ -5,8 +5,15 @@
 /*<a> ancora*/
 /*baixar "live Server"*/
 
+
 body{	
 background: gray;
+}
+
+.linha_horizontal_1{
+    height: 10px;
+    background-image:url("linha-1.jpg");
+    background-repeat: repeat-x;
 }
 
 header.cabecalho {	
